@@ -1135,7 +1135,19 @@
 #define LINKTYPE_EBHSCR	        279
 
 
-#define LINKTYPE_MATCHING_MAX	279		/* highest value in the "matching" range */
+/*
+ * Sigfox is a low power wide area radio protocol for IOT applications.
+ * The downlink and the uplink use different frames.
+ * To distinguish between uplink and downlink two linketypes are defined.
+ * a specification of this protocol is available at
+ * https://github.com/Jeija/renard-spec/releases
+ *
+ */
+#define LINKTYPE_SIGFOX_UPLINK           280
+#define LINKTYPE_SIGFOX_DOWNLINK         281
+
+
+#define LINKTYPE_MATCHING_MAX	281		/* highest value in the "matching" range */
 
 /*
  * The DLT_ and LINKTYPE_ values in the "matching" range should be the
